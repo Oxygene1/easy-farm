@@ -1,0 +1,14 @@
+*
+.h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    font-weight: 200rem;
+}
+.h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100rem;
+    background-image: none;
+    color: #333;
+    align-items: center;
+
+}

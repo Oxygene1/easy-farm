@@ -1,0 +1,407 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@600&display=swap');
+body{
+    background-color: #fff;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    padding: 0;
+}
+
+
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Navbar section */
+
+header{
+    width: 100%;
+    background-image: url('smile2.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* border-radius: 6rem; */
+   
+    /* margin: 1rem; */
+   
+    /* line-height: 65px; */
+    /* text-align: center; */
+    
+}
+.nav{
+    height: 20em;
+}
+
+.nav div.logo{
+    margin: 1rem;
+    
+    position: absolute;
+}
+.nav div.logo img{
+    border-radius: 6em;
+}
+
+.nav div.logo a{
+    text-decoration: none;
+  
+    text-transform: uppercase;
+}
+
+/* .nav div.logo a:hover {
+    color: #c0c0c0;
+} */
+
+.break{
+    display: none;
+
+}
+
+.display a{
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    
+   
+}
+
+.nav div.main_list{
+    width: 600px;
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul{
+    width:100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+}
+
+.nav div.main_list ul li{
+    width: 120px;
+    height: 65px;
+    
+}
+
+.nav div.main_list ul li a{
+    text-decoration: none;
+    color: #46A908;
+    line-height: 65px;
+    background-color:#fff;
+    padding: 1rem;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+.nav div.main_list ul li a:hover{
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.42);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.nav div.media_button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    display: none;
+}
+
+.nav div.media_button button.main_media_button {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span{
+    width: 98%;
+    height: 1px;
+    display: block;
+    background-color: #fff;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1){
+    transform: rotateY(180deg);
+    transition: all 0.5s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2){
+    transform: rotateY(180deg);
+    transition: all 0.4s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3){
+    transform: rotateY(180deg);
+    transition: all 0.3s;
+    background-color: #c0c0c0;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -45deg);
+    position: absolute;
+    margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+    transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+    transform: rotate3d(0, 0, 1, -20deg);
+}
+
+
+.head-img{
+    display: grid;
+        margin-left: 60%;
+}
+    .caption{
+    color: #fff;
+}
+
+    .head-img img{
+        border-radius: 2rem;
+        max-width: 50%;
+
+}
+/* Home section */
+
+/* .home{
+    width: 100%;
+    height: 100vh;
+    background-color: #ddd;
+} */
+
+
+
+.main-con1{
+    display: flex;
+    background:#46A908;
+    padding-bottom: 3em;
+}
+
+.main-side2{
+    width: 100%;
+
+}
+
+.main-side2 p{
+    text-align: center;
+    justify-content: space-around;
+    max-width: 100%;
+    color: #fff;
+    margin: 2rem;
+}
+.main-side2 img{
+    max-width:70%;
+    border-radius: 1.5rem;
+}
+
+.main-side1{
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.main-side1 h1, h2{
+    width: 65%;
+    color: #fff;
+    padding: 1rem;
+}
+
+.main-side2 h2{
+    margin-top: 1rem;
+
+}
+.main-side1 a, .main-side2 a {
+  
+
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.42);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+
+.main-side1 h1{
+    margin-top: 3em;
+}
+ .nav-list a:hover{
+    background-color:#fff;
+    padding: 1rem;
+    border-radius: 12px;
+
+    
+}
+footer{
+    height: 20em;
+    background: #0f1110;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+.foot-img{
+    margin-left: 2rem;
+}
+.foot-img a{
+    margin: 1rem;
+    /* border-radius: 2rem; */
+    background: #46A908;
+    padding-top: 6px;
+}
+.foot-img a:hover{
+    backdrop-filter: blur(8px) saturate(200%);
+    -webkit-backdrop-filter: blur(8px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.42);
+    border-radius: 12px;
+ 
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.copy-desk{
+    margin-top: 7em;
+    justify-content: center;
+    display: flex;
+}
+.copy-desk img{
+    /* margin-top: 6em; */
+    margin-right: 3%;
+}
+.copy-desk p{
+    color: #fff;
+   
+  
+}
+.subscribe{
+    display:grid ;
+    float: right;
+    margin-right: 2em;
+}
+.subscribe h4{
+    color: #fff;
+    margin: 1rem;
+}
+
+.subscribe input{
+    color: #fff;
+    background-color: #46A908;
+    padding: 1.2rem;
+    border-style: none;
+    margin: 1rem;
+}
+.btn-contain button{
+    margin-top: 5em;
+}
+
+.login{
+    display: grid;
+    justify-content: center;
+}
+
+.login input{
+    max-width: 15rem;
+    margin: 4em 1.5rem 1rem 1.5rem;
+}
+
+
+.main-login-chamber{
+    height: 18em;
+   background: #46A908;
+}
+
+/* Medai qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .container{
+        margin: 0;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    
+    .container{
+        margin: 0;
+    }
+    
+    .nav div.logo{
+        margin-left: 15px;
+    }
+    
+    .nav div.main_list{
+        width: 100%;
+        margin-top: 65px;
+        height: 0px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+        height: 200px;
+    }
+    
+    .nav div.main_list ul{
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 80px;
+        right: 0;
+        left: 0;
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 40px;
+        background-color:#46A908;
+    }
+    
+    .nav div.main_list ul li a{
+      text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        display: table;
+        backdrop-filter: blur(1px) saturate(200%);
+        -webkit-backdrop-filter: blur(5px) saturate(200%);
+        background-color: rgba(255, 255, 255, 0.42);
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+    }
+    
+    .nav div.media_button{
+        display: block;
+    }
+    .head-img{
+        display: none;
+    }
+}
