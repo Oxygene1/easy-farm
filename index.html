@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     
     <link rel="stylesheet" href="/style.css">
     
-    <title>Document</title>
+    <title>Easy Farming</title>
 </head>
 <body>
 <header>
     <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="index.html"> <img   style="height: 2rem;" src="greentree.jpg"  alt=""></a>
+                <a href="index.html"> <img   style="height: 3rem;margin-top: 1rem;" src="greentree.jpg"  alt=""></a>
             </div>
             <div class="main_list" id="mainListDiv">
                 <ul>
@@ -31,15 +33,15 @@
             </div>
         </div>
     </nav>
-     <div class="display" style="border: red 2px solid;">
-        <h3 class="slide-top"> <a href="forum.html">BE A PART OF <br class="break"> THE COMMUNITY</a></h3>
+     <div class="row">
+        <h3> BE A PART OF THE COMMUNITY</h3>
     </div>
 
     <div class="head-img">
         <h3 class="caption">Happy Farming</h3>
         <img style="width: 20rem;" src="smile2.webp" alt="">
        
-    </div> -->
+    </div>
     <section class="home"></section>
 
 </header>
@@ -48,8 +50,14 @@
 <div class="main-con1">
     <div class="main-side1">
         <h1>"Helping Farmers Change The Game"</h1>
-        <h2><a href="">Be an informed Farmer</a> </h2>
-      
+        <h3><a href="">Be an informed Farmer</a> </h3>
+        <div>
+        <form class="form">
+        <input  id="search" class="input" type="text" placeholder="Enter Something">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <!-- <button id="clear" class="clear-results"> clear</button> -->
+        </form>
+        </div>
     </div>
   
     <div class="main-side2">
@@ -59,14 +67,15 @@
         <img src="burundi_farm.jpg" alt="">
     </div>
 </div>
+
 <footer>
    
     <div class="subscribe">
 
                 <h4>subscribe to our newsletter </h4> 
         <div class="btn">
-                <input type="text" value="email address">
-                <button class="btn-btn" value=" "><img  style="height: 2rem; border-radius: .2rem;" src="newslettter1.jpg" alt=""></button>
+                <input id="input" type="text" value="">
+                <button class="btn btn-success" placeholder="Enter your email">submit</button>
         </div>
     </div>
     <div class="foot-img">
@@ -78,8 +87,14 @@
         <img style="height: 3rem; border-radius: 2em;" src="greentree.jpg" alt="">
         <p>Copyright &copy; Easy Farm Technologies 2022 </p>
     </div>
-</footer>
 
+    
+  
+
+</footer>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="index.js"></script> -->
     <script src="app.js"></script>
 </body>
 </html>

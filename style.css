@@ -7,6 +7,7 @@ body{
     box-sizing: border-box;
     transition: all 0.4s;
     padding: 0;
+   
 }
 
 
@@ -22,6 +23,7 @@ header{
     background-image: url('smile2.webp');
     background-repeat: no-repeat;
     background-size: 100%;
+    overflow: hidden;
     /* border-radius: 6rem; */
    
     /* margin: 1rem; */
@@ -58,31 +60,41 @@ header{
 
 }
 
-.display a{
-    color: #fff;
+
+.row h3{
+     color: #fff;
     font-size: 2rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
     margin-left: 2rem;
-    text-decoration: none;
-    
-   
+     font-size: 3em;
+     white-space: nowrap;
+     width: 100%;
+     animation: animtext 4s steps(100, end); 
+      transition: all cubic-bezier(0.1, 0.7, 1.0, 0.1);
+   }
+   @keyframes animtext { 
+     from {
+         width: 0;
+        transition: all 5s ease-in-out;
+     } 
 }
 
 .nav div.main_list{
     width: 600px;
     height: 65px;
     float: right;
+    margin-top: 2rem;
 }
 
 .nav div.main_list ul{
     width:100%;
-    height: 65px;
+    height: 3em;
     display: flex;
     list-style: none;
 }
 
 .nav div.main_list ul li{
-    width: 120px;
+    width: 60%;
     height: 65px;
     
 }
@@ -90,24 +102,27 @@ header{
 .nav div.main_list ul li a{
     text-decoration: none;
     color: #46A908;
-    line-height: 65px;
-    background-color:#fff;
+    line-height: 4em;
+    backdrop-filter: blur(1px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.42);
+    border: 1px solid rgba(209, 213, 219, 0.3);
     padding: 1rem;
     border-radius: 12px;
     text-transform: uppercase;
 }
 
 .nav div.main_list ul li a:hover{
-    backdrop-filter: blur(1px) saturate(200%);
-    -webkit-backdrop-filter: blur(5px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.42);
+   
+   
+    background-color:#fff;
     border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
+   
 }
 
 .nav div.media_button {
-    width: 40px;
-    height: 40px;
+    
+    height: 4em;
     background-color: transparent;
     position: absolute;
     right: 15px;
@@ -179,23 +194,20 @@ header{
 .head-img{
     display: grid;
         margin-left: 60%;
+       
 }
     .caption{
     color: #fff;
 }
 
-    .head-img img{
-        border-radius: 2rem;
-        max-width: 50%;
+.head-img img{
+    border-radius: 2rem;
+    max-width: 50%;
+
 
 }
 /* Home section */
 
-/* .home{
-    width: 100%;
-    height: 100vh;
-    background-color: #ddd;
-} */
 
 
 
@@ -227,13 +239,14 @@ header{
     width: 100%;
 }
 
-.main-side1 h1, h2{
+.main-side1 h1{
     width: 65%;
     color: #fff;
     padding: 1rem;
+    margin-left: 3rem;
 }
 
-.main-side2 h2{
+.main-side2 h3{
     margin-top: 1rem;
 
 }
@@ -246,10 +259,35 @@ header{
     backdrop-filter: blur(1px) saturate(200%);
     -webkit-backdrop-filter: blur(5px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.42);
-    border-radius: 12px;
+    border-radius: 12px;    
     border: 1px solid rgba(209, 213, 219, 0.3);
 }
+.main-side1 a{
+    margin-left: 4rem;
+}
 
+.form{
+   
+    display: flex;
+    margin-top: 2em;
+    margin-left: 4em;
+}
+.form input{
+    width: 12em;
+    border-style: none;
+    color: #46A908;
+    outline: none;
+
+}
+.form button{
+
+    color:#46A908 ;
+    border-style: none;
+    width: 2rem;
+    background-color:#fff;
+    outline: none;
+    
+}
 
 .main-side1 h1{
     margin-top: 3em;
@@ -312,9 +350,9 @@ footer{
 .subscribe input{
     color: #fff;
     background-color: #46A908;
-    padding: 1.2rem;
+    padding: .2rem;
     border-style: none;
-    margin: 1rem;
+    margin: .2rem;
 }
 .btn-contain button{
     margin-top: 5em;
@@ -351,6 +389,15 @@ footer{
 
 @media screen and (max-width:768px) {
     
+    body{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    header{
+        height: 22em;;
+    }
+
     .container{
         margin: 0;
     }
@@ -367,30 +414,32 @@ footer{
     }
     
     .nav div.show_list{
-        height: 200px;
+        height: 300px;
+        position: absolute;
     }
     
     .nav div.main_list ul{
         flex-direction: column;
-        width: 100%;
+        width: 70%;
         height: 200px;
-        top: 80px;
+        top: 4rem;
         right: 0;
         left: 0;
     }
     
     .nav div.main_list ul li{
         width: 100%;
-        height: 40px;
-        background-color:#46A908;
+        height: 3rem;
+        margin-bottom:1rem ;
+        
     }
     
     .nav div.main_list ul li a{
       text-align: center;
         line-height: 40px;
         width: 100%;
-        height: 40px;
-        display: table;
+        height: 3.5em;
+        display: grid;
         backdrop-filter: blur(1px) saturate(200%);
         -webkit-backdrop-filter: blur(5px) saturate(200%);
         background-color: rgba(255, 255, 255, 0.42);
@@ -403,5 +452,15 @@ footer{
     }
     .head-img{
         display: none;
+    }
+    .row h3{
+        display: none;
+    }
+    .main-con1{
+    display: grid;
+}
+
+    .main-side1 a{
+        max-width: 30%;
     }
 }

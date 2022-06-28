@@ -9,19 +9,26 @@
 </head>
 <body>
     <header style="background-image: url('smile2.webp'); background-repeat: no-repeat; background-size: cover; height: 20em;">
-    <div class="container">
-        <div class="logo">
-            <a href="index.html"> <img   style="height: 2rem;" src="greentree.jpg"  alt=""></a>
-        </div>
-        <div class="nav-list">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </div>
-    </div>
+        <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"> <img   style="height: 2rem;" src="greentree.jpg"  alt=""></a>
+                </div>
+                <div class="main_list" id="mainListDiv">
+                    <ul>
+                        <li><a href="#">contact</a></li>    
+                        <li><a href="login.html">Log in</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="media_button">
+                    <button class="main_media_button" id="mediaButton">
+                        <img style="height: 2em;" src="hamburger21.jpg" alt="">
+                    </button>
+                </div>
+            </div>
+        </nav>
 
     </header>
 
@@ -54,5 +61,6 @@
             <p>Copyright &copy; Easy Farm Technologies 2022 </p>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
