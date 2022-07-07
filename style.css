@@ -26,6 +26,27 @@ body{
     margin-right: 5%;
 }
 
+.container1{
+    margin-top: 2em;
+    width:100%;
+    display: flex;
+}
+.container1 img{
+    margin: 1rem;
+    width: 80%;
+}
+
+.gif-display{
+    color: #fff;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 0 0 2em;
+    justify-content: center;
+}
+.gif-display p{
+    margin-left: 2em;
+}
+
 /* Navbar section */
 
 header{
@@ -294,8 +315,7 @@ header{
 .Hotbg
 {
     position: absolute;
-    top: 63em;
-    left: 15%;
+    margin-left: 10%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     height: 20px;
@@ -474,6 +494,26 @@ footer{
 
 }
 
+/* LOADER */
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/Spinner-1.2s-190px.gif");
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* LOADER */
+
+
 
 
 /* Mobile section */
@@ -502,6 +542,17 @@ footer{
 
     .container{
         margin: 0;
+    }
+    .container1{
+        display: grid;
+    }
+    .container1 img{
+        margin: .1rem;
+       width: 100%;
+       margin-left: 20%;
+    }
+    .blog-text{
+        display: grid;
     }
     
     .nav div.logo{
