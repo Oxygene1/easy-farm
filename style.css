@@ -187,15 +187,22 @@ header{
    background-color: #46A908;
    
 }
+.nav div.media_button img{
+    border-radius: .5rem;
+}
 
 .nav div.media_button {
-    
-    height: 4em;
+    height: 3em;
     position: absolute;
     right: 15px;
     top: 12px;
     display: none;
 }
+.nav div.media_button:hover{
+    opacity: 0.7;
+}
+
+
 
 .nav div.media_button button.main_media_button {
     width: 100%;
@@ -206,56 +213,6 @@ header{
     cursor: pointer;
 }
 
-.nav div.media_button button.main_media_button span{
-    width: 98%;
-    height: 1px;
-    display: block;
-    background-color: #fff;
-    margin-top: 9px;
-    margin-bottom: 10px;
-}
-
-.nav div.media_button button.main_media_button:hover span:nth-of-type(1){
-    transform: rotateY(180deg);
-    transition: all 0.5s;
-    background-color: #fff;
-}
-
-.nav div.media_button button.main_media_button:hover span:nth-of-type(2){
-    transform: rotateY(180deg);
-    transition: all 0.4s;
-    background-color: #fff;
-}
-
-.nav div.media_button button.main_media_button:hover span:nth-of-type(3){
-    transform: rotateY(180deg);
-    transition: all 0.3s;
-    background-color: #fff;
-}
-
-.nav div.media_button button.active span:nth-of-type(1) {
-    transform: rotate3d(0, 0, 1, 45deg);
-    position: absolute;
-    margin: 0;
-}
-
-.nav div.media_button button.active span:nth-of-type(2) {
-    display: none;
-}
-
-.nav div.media_button button.active span:nth-of-type(3) {
-    transform: rotate3d(0, 0, 1, -45deg);
-    position: absolute;
-    margin: 0;
-}
-
-.nav div.media_button button.active:hover span:nth-of-type(1) {
-    transform: rotate3d(0, 0, 1, 20deg);
-}
-
-.nav div.media_button button.active:hover span:nth-of-type(3) {
-    transform: rotate3d(0, 0, 1, -20deg);
-}
 
 
 .head-img{
@@ -435,12 +392,15 @@ footer{
 
 }
 .foot-img a{
+    /* padding-top: .2rem; */
     margin: .6rem;
-    width: 2em;
-    height: 2em;
-    padding-top: 6px;
+    width: 2rem;
+    height: 2rem;
+    padding: .3rem;
+    border-radius: 100%;
+    /* padding-top: 6px; */
     text-decoration: none;
-    color: #46A908;
+    /* color: #46A908; */
 }
 .foot-img a:hover{
     color: #fff;
@@ -524,6 +484,8 @@ footer{
 .btn-sucess:hover{
     color:#46A908;
     background-color: #fff;
+    border-color: #fff;
+    border-radius: .5rem;
 }
 
 .crop-div{
@@ -556,9 +518,32 @@ footer{
     background-position: center;
     position: fixed;
 }
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
 
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa {
+    /* padding: 20px; */
+    /* font-size: 30px; */
+    /* width: 50px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
 
-
+  .fa-instagram {
+    background: #bb0000;
+    color: white;
+  }
 /* LOADER */
 
 
@@ -628,25 +613,151 @@ header{
         margin-left: 15px;
     }
     
+
+    
     .nav div.main_list{
-        width: 100%;
-        margin-top: 2em;
+        width: 70%;
+        margin-top: 1em;
         height: 0px;
         overflow: hidden;
     }
     
     .nav div.show_list{
-        height: 300px;
+        height: 20em;
         position: absolute;
+        z-index: 1;
+        right: 6rem;
     }
     
     .nav div.main_list ul{
-        flex-direction: column;
+        width: 100%;
+        height: 9em;
+        display: grid;
+        margin-right: 10%;
+        
+    }
+    
+    .nav div.main_list ul li{
+        width: 100%;
+        height: 3rem;
+        margin-bottom:1rem ;
+        
+    }
+    
+    .nav div.main_list ul li a{
+      text-align: center;
+        line-height: 40px;
+        width: 100%;
+        height: 3.5em;
+        display: grid;
+        background-color: #fff;
+    }
+
+
+
+    
+    .nav div.media_button{
+        display: block;
+
+    }
+    .head-img{
+        display: none;
+    }
+    .row{
+        display: flex;
+        top: 1em;
+
+    }
+    .main-con1{
+    display: grid;
+    padding-top: 4em;
+}
+
+    .main-side1 a{
+        max-width: 30%;
+    }
+    .dropdown{
+        display: none;
+      
+    }
+    .btn-group{
+        margin-left: 60%;
+    }
+    .btn-group button{
+        border:#fff 2px solid ;
+    }
+
+    
+      
+
+    .dropdown-menu a{
+        color: #46A908;
+        background-color: #fff;
+        margin-left: -2em;
+       
+    }
+  
+
+    .dropdown-menu{
+        margin-right: 5em;
+        max-width: 13%;
+        margin-left: 15%;
+      
+       
+    }
+
+      .btn-group{
+        display: grid;
+        margin-top: -2em;
+        margin-right: 5%;
+      }
+      footer{
+        height: 25em;
+      }
+   
+}
+@media screen and (max-width: 400px){
+
+
+
+
+    .main-side1 h3{
+        font-size: medium;
+    }
+
+
+
+
+    footer{
+        height: 27em;
+    }
+
+    /* .copy-desk{
+        margin-top: -3em;
+    } */
+
+
+
+        .nav div.main_list{
         width: 70%;
-        height: 200px;
-        top: 4rem;
-        right: 0;
-        left: 2em;
+        margin-top: 1em;
+        height: 0px;
+        overflow: hidden;
+    }
+    
+    .nav div.show_list{
+        height: 20em;
+        position: absolute;
+        z-index: 1;
+        right: 6rem;
+    }
+    
+    .nav div.main_list ul{
+        width: 100%;
+        height: 9em;
+     
+        margin-right: 10%;
+        
     }
     
     .nav div.main_list ul li{
@@ -667,59 +778,4 @@ header{
         background-color: #fff;
     }
     
-    .nav div.media_button{
-        display: block;
-    }
-    .head-img{
-        display: none;
-    }
-    .row{
-        display: flex;
-        top: 1em;
-
-    }
-    .main-con1{
-    display: grid;
-}
-
-    .main-side1 a{
-        max-width: 30%;
-    }
-    .dropdown{
-        display: none;
-      
-    }
-    .btn-group{
-        margin-left: 60%;
-    }
-    .btn-group button{
-        border:#fff 2px solid ;
-    }
-
-    /* .dropdown-toggle:hover{
-        color: #46A908;
-        background-color: #fff;
-        
-      } */
-      
-
-    .dropdown-menu a{
-        color: #46A908;
-        background-color: #fff;
-        margin-right: 3em;
-       
-    }
-
-    .dropdown-menu{
-        margin-right: 4em;
-        /* max-width: 13%; */
-      
-       
-    }
-
-      .btn-group{
-        display: flex;
-        margin-top: -2em;
-      }
-   
 }
