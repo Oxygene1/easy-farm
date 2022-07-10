@@ -34,6 +34,7 @@ body{
 .container1 img{
     margin: 1rem;
     width: 80%;
+    margin-right: 2em;
 }
 
 .gif-display{
@@ -45,6 +46,7 @@ body{
 }
 .gif-display p{
     margin-left: 2em;
+    width: 75%;
 }
 
 /* Navbar section */
@@ -89,16 +91,38 @@ header{
 
 .row{
     margin-top: -4em;
+    margin-left: 5rem;
+    
 }
 .row h3{
-     color: #fff;
-    font-size: 2rem;
-    margin-top: 1rem;
-    margin-left: 4rem;
-     font-size: 3em;
-     white-space: nowrap;
-     width: 70%;
-   }
+    /* position: relative; */
+    color: #fff;
+    font-weight:bold;
+    width: 70%;
+    letter-spacing: 7px;
+    overflow: hidden;
+    border-right: 2px solid #46A908;
+    white-space: nowrap;
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+      blinkTextCursor 500ms infinite;
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 710px;
+    }
+  }
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: hsl(0, 0%, 80%);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
  
 .dropdown{
     margin-top:-.4rem ;
@@ -123,25 +147,26 @@ header{
 
 .main_list{
     display: flex;
-    margin-left: 20%;
+
 }
 
 .nav div.main_list{
-    width: 600px;
-    float: right;
+    width: 70%;
+    margin-left: 50%;
     margin-top: 2rem;
+    position: relative;
+    z-index: 2;
 }
 
 .nav div.main_list ul{
-    width:100%;
-    height: 3em;
+    width:70%;
     display: flex;
     list-style: none;
 }
 
 .nav div.main_list ul li{
     width: 50%;
-    height: 65px;
+    /* height: 65px; */
     
     
 }
@@ -151,8 +176,8 @@ header{
     color: #46A908;
     /* line-height: 4em; */
     background-color: #fff;
-    padding: 1rem;
-    margin: 2rem;
+    padding: .6rem;
+    margin: .5rem;
     border-radius: 12px;
     text-transform: uppercase;
 }
@@ -292,6 +317,7 @@ header{
 
 .main-side2 h3{
     margin-top: 1rem;
+    
 
 }
 .main-side1 a, .main-side2 a {
@@ -300,6 +326,7 @@ header{
     text-decoration: none;
     color: #fff;
     padding: 1rem;
+    width: 15%;
     backdrop-filter: blur(1px) saturate(200%);
     -webkit-backdrop-filter: blur(5px) saturate(200%);
     background-color: rgba(255, 255, 255, 0.42);
@@ -315,7 +342,7 @@ header{
 .Hotbg
 {
     position: absolute;
-    margin-left: 10%;
+    margin-left: 30%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     height: 20px;
@@ -330,7 +357,7 @@ header{
 
 .Hotbg:hover > .Hotbg-txt
 {
-    width: 240px;
+    width: 30%;
     padding: 0;
 
 }
@@ -405,20 +432,18 @@ footer{
 }
 .foot-img{
     margin-left: 2rem;
+
 }
 .foot-img a{
-    margin: 1rem;
-    /* border-radius: 2rem; */
-    background: #fff;
+    margin: .6rem;
+    width: 2em;
+    height: 2em;
     padding-top: 6px;
+    text-decoration: none;
+    color: #46A908;
 }
 .foot-img a:hover{
-    backdrop-filter: blur(8px) saturate(200%);
-    -webkit-backdrop-filter: blur(8px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.42);
-    border-radius: 12px;
- 
-    border: 1px solid rgba(209, 213, 219, 0.3);
+    color: #fff;
 }
 
 .copy-desk{
@@ -451,7 +476,18 @@ footer{
     padding: .2rem;
     border-style: none;
     margin: .2rem;
+    outline: none;
+
 }
+.subscribe input:hover{
+    color: #46A908;
+    background-color: #fff;
+}
+
+.btn-group{
+    display: none;
+}
+
 .btn-contain button{
     margin-top: 5em;
 }
@@ -459,10 +495,12 @@ footer{
 .login{
     display: grid;
     justify-content: center;
+    
 }
 
 .login input{
     max-width: 15rem;
+    padding: .4rem;
     margin: 4em 1.5rem 1rem 1.5rem;
     outline: none;
     color: #46A908;
@@ -471,13 +509,21 @@ footer{
 
 
 .main-login-chamber{
-    height: 18em;
+    height: 30em;
    background: #46A908;
+  
 }
+
 
 .btn-sucess {
     color: #fff;
     background: #46A908;
+    padding: .3rem;
+   
+}
+.btn-sucess:hover{
+    color:#46A908;
+    background-color: #fff;
 }
 
 .crop-div{
@@ -508,7 +554,9 @@ footer{
     background-color: #fff;
     background-repeat: no-repeat;
     background-position: center;
+    position: fixed;
 }
+
 
 
 /* LOADER */
@@ -517,6 +565,22 @@ footer{
 
 
 /* Mobile section */
+
+@media screen and (max-width:960px ) {
+
+header{
+    /* padding-bottom: 2em; */
+    margin-bottom:-5em ;
+
+}
+.head-img{
+   display: none;
+}
+.row{
+    margin-bottom: 7em;
+}
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     
@@ -536,32 +600,37 @@ footer{
         width: 100%;
     }
 
-    /* header{
-        height: 22em;
-    } */
-
+    header{
+        height: 14em;
+        margin-bottom: -2em;
+        
+    }
+   
     .container{
         margin: 0;
     }
     .container1{
         display: grid;
+        margin-right: 2em;
     }
     .container1 img{
         margin: .1rem;
-       width: 100%;
-       margin-left: 20%;
+       width: 75%;
+       /* margin-left: 20%; */
     }
     .blog-text{
         display: grid;
     }
-    
+   
+
+  
     .nav div.logo{
         margin-left: 15px;
     }
     
     .nav div.main_list{
         width: 100%;
-        margin-top: 65px;
+        margin-top: 2em;
         height: 0px;
         overflow: hidden;
     }
@@ -577,7 +646,7 @@ footer{
         height: 200px;
         top: 4rem;
         right: 0;
-        left: 0;
+        left: 2em;
     }
     
     .nav div.main_list ul li{
@@ -604,8 +673,10 @@ footer{
     .head-img{
         display: none;
     }
-    .row h3{
-        display: none;
+    .row{
+        display: flex;
+        top: 1em;
+
     }
     .main-con1{
     display: grid;
@@ -614,4 +685,41 @@ footer{
     .main-side1 a{
         max-width: 30%;
     }
+    .dropdown{
+        display: none;
+      
+    }
+    .btn-group{
+        margin-left: 60%;
+    }
+    .btn-group button{
+        border:#fff 2px solid ;
+    }
+
+    /* .dropdown-toggle:hover{
+        color: #46A908;
+        background-color: #fff;
+        
+      } */
+      
+
+    .dropdown-menu a{
+        color: #46A908;
+        background-color: #fff;
+        margin-right: 3em;
+       
+    }
+
+    .dropdown-menu{
+        margin-right: 4em;
+        /* max-width: 13%; */
+      
+       
+    }
+
+      .btn-group{
+        display: flex;
+        margin-top: -2em;
+      }
+   
 }

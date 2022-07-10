@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
          <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" style="border-radius: 2em;"  href="images/logo2.png">
     
@@ -20,7 +19,7 @@
     <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="index.html"> <img   style="height: 4rem;margin-top: 1rem;" src="images/logo2.png"  alt=""></a>
+                <a href="index.html"> <img   style="height: 2rem;width: 2rem; margin-top: 1rem;" src="images/logo2.png"  alt=""></a>
             </div>
             <div class="main_list" id="mainListDiv">
 
@@ -39,7 +38,7 @@
                     <li><a href="#">contact</a></li>    
                     <li><a href="login.html">Login</a></li>
                     <li><a href="support.html">Support</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog.html">Gallery</a></li>
                 </ul>
             </div>
             
@@ -51,8 +50,9 @@
             
         </div>
     </nav>
+        
      <div class="row">
-        <h3 data-text="It's loading…">GET ALL CROPS INFORMATION HERE</h3>
+        <h3 data-text="It's loading…">GET ALL CROPS INFORMATION..</h3>
     </div>
 
     <div class="head-img">
@@ -68,16 +68,29 @@
 
 <div class="main-con1">
     <div class="main-side1">
-        <h1>"Helping Farmers Change The Game"</h1>
-        <h3><a href="">Be an informed Farmer</a> </h3>
-        <div>
         <form class="Hotbg">
 
-        <input  id="searchBar"  type="text" name="" class="Hotbg-txt" placeholder="Search >>>">
-        <button id="btn" class="Hotbg-btn"><i class="fa fa-search"></i></button>
-
-   
+            <input  id="searchBar"  type="text" name="" class="Hotbg-txt" value="" placeholder="Search >>>">
+            <button id="btn" class="Hotbg-btn"><i class="fa fa-search"></i></button>
+    
+       
         </form>
+        <ul class="user-list"></ul>
+            <div class="btn-group">
+                <button type="button" class="btn btn-sucess dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Crops info
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="Annual.html">Annual Crops</a>
+                    <a class="dropdown-item" href="Biennial.html">Biennal Crops</a>
+                    <a class="dropdown-item" href="Perennial.html">Perennial Crops</a>
+                </div>
+              </div>
+
+
+        <h1>"Helping Farmers Change The Game"</h1>
+        <h3><a href="login.html">Be an informed Farmer</a> </h3>
+        <div>
         <div class="crop-div">
            <ul  id="crop-list"></ul>
            <!-- <ul id="crop-list2"></ul>
@@ -89,7 +102,7 @@
     <div class="main-side2">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus soluta sequi laboriosam nesciunt exercitationem! Illo perspiciatis ex quas enim sed error neque dolorem est cum tempora. Tenetur odit quis doloribus.</p>
         <p> 
-           <a href="#">Continue Reading...</a></p>
+           <a href="blog.html">Continue Reading...</a></p>
         <img src="images/burundi_farm.jpg" alt="">
     </div>
 </div>
@@ -101,17 +114,18 @@
 
                 <h4>subscribe to our newsletter </h4> 
         <div class="btn">
-                <input id="input" type="text" value="">
+                <input id="input" type="text" placeholder="email address" value="">
                 <button class="btn btn-sucess" placeholder="Enter your email">submit</button>
         </div>
     </div>
     <div class="foot-img">
-        <a href=""><img style="width: 2rem;" src="images/iconmonstr-facebook-5.svg" alt=""></a>
-        <a href=""><img style="width: 2rem;"  src="images/iconmonstr-instagram-11.svg" alt=""></a>
-        <a href=""><img style="width: 2rem;"  src="images/iconmonstr-twitter-2.svg" alt=""></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+
     </div>
     <div class="copy-desk">
-        <img style="height: 3rem; border-radius: 2em;" src="images/logo2.png" alt="">
+        <img style="height: 2rem; width: 2rem; border-radius: 2em; margin-bottom: 3rem;" src="images/logo2.png" alt="">
         <p>Copyright &copy; Easy Farm Technologies 2022 </p>
     </div>
 
