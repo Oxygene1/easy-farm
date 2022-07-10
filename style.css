@@ -546,6 +546,10 @@ footer{
   }
 /* LOADER */
 
+#active{
+    color: #fff;
+    background-color: #46A908;
+}
 
 
 
@@ -718,7 +722,9 @@ header{
 }
 @media screen and (max-width: 400px){
 
-
+    header{
+        height: 11em;
+    }
 
 
     .main-side1 h3{
